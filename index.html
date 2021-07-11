@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Лучшая пицца в твоем городе</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style.scss">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div class='piz'>
+    <select id='pizza'>
+        <option disabled selected>Выбери пиццу</option>
+        <option value="Пепперони">Пепперони</option>
+        <option value="Деревенская">Деревенская</option>
+        <option value="Гавайская">Гавайская</option>
+        <option value="Грибная">Грибная</option>
+    </select>
+</div>
+
+<div class='siz'>
+    <select id='size'>
+        <option disabled selected>Её размер</option>
+        <option value="7">Детская, 21см</option>
+        <option value="12">Стандартная, 26см</option>
+        <option value="16">Большая, 31см</option>
+        <option value="21">Семейная, 45см</option>
+    </select>
+</div>
+
+<div class='soz'>
+    <select id='sauce'>
+        <option disabled selected>И соус</option>
+        <option value="Сырный">Сырный</option>
+        <option value="Кисло-сладкий">Кисло-сладкий</option>
+        <option value="Чесночный">Чесночный</option>
+        <option value="Барбекю">Барбекю</option>
+    </select>
+</div>
+
+<button href='#modal1' id ='order' class='open' disabled="true">Cделать заказ</button>
+
+<div id='modal1' class='modal_div'>
+    <span class='modal_close'>X</span>
+    <div class="bill" id="result">
+        Ваш заказ:
+    </div>
+        <button class='close' title="Спасибо за заказ и приятного аппетита!!!">Все верно</button>
+    </div>
+<div id='overlay'></div>
+<script src='index.js'></script>
+</body>
+</html>

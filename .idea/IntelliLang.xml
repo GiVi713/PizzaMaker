@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LanguageInjectionConfiguration">
+    <injection language="JQuery-CSS" injector-id="xml">
+      <display-name>body</display-name>
+      <place>xmlTag().withLocalName(string().equalTo(&quot;body&quot;)).withNamespace(string().equalTo(&quot;http://www.w3.org/1999/html&quot;))</place>
+    </injection>
+  </component>
+</project>
